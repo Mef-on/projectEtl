@@ -1,9 +1,20 @@
 pipeline {
     agent any
+    tools {
+        maven '3.9.2'
+        jdk '17'
+        }
     stages {
-        stage('Stage 1') {
+        stage('Build') {
             steps {
-                echo 'Hello world!'
+                sh 'java -version'
+                echo 'building project...'
+                sh 'mvn clean install'
+            }
+        }
+          stage('Test') {
+            steps {
+                sh 'mvn test'
             }
         }
     }
