@@ -6,12 +6,12 @@ class FakeTest {
     static private int TEST_2 = 2;
 
     @Test
-    void fakeTest() {
+    void fakeTest1() {
         Assertions.assertEquals(TEST_1, TEST_1);
     }
 
     @Test
-    void fakeTest1() {
-        Assertions.assertEquals(TEST_1, TEST_2);
+    void fakeTest2() {
+        Assertions.assertEquals(TEST_2, TEST_2);
     }
 }
