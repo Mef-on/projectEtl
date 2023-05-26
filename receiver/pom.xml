@@ -35,6 +35,12 @@
             <artifactId>spring-kafka</artifactId>
             <version>3.0.4</version>
         </dependency>
+        <!--Hibernate-->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>6.2.3.Final</version>
+        </dependency>
     </dependencies>
 
     <build>

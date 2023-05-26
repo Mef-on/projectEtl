@@ -17,5 +17,4 @@ public class RestController {
     public ResponseEntity<User> getUser() {
         return ResponseEntity.ok(service.getUser());
     }
-
 }
